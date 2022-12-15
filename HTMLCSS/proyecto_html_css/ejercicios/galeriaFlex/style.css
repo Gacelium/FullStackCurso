@@ -1,0 +1,62 @@
+*,::before,::after,html{
+      margin: 0;
+      padding: 0;
+}
+body{
+      min-height: 100vh;
+      width: 100vw;
+      font-size: 17px;
+}
+header{
+      text-align: center;
+      margin: 1rem 0;
+}
+h1{
+      font-size: 2rem;
+}
+p{
+      font-size: 1rem;
+}
+img{
+      width: 100%;
+}
+.row{
+      box-sizing: border-box;
+      padding: 0.3rem;
+      display: flex;
+      flex-direction: column;
+
+}
+
+
+/* Medias querys para tablet */
+@media screen and (min-width:768px) {
+      /* Aquí serán en dos columnas */
+      .row{
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+            justify-content: center;
+      }
+      .column{
+            flex-basis: 48%;
+      }
+
+}
+/* Medias querys para escritorio */
+@media screen and (min-width:1200px) {
+      /* Tres columnas 
+      .column{
+            width: 33%;
+      }
+      */
+      
+}
+/* Medias querys para escritorio grande */
+@media screen and (min-width:1344px) {
+      /* Cuatro columnas */
+      .column{
+            flex-basis: 24%;
+      }
+      
+}

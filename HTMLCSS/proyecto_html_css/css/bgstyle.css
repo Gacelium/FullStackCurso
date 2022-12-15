@@ -1,0 +1,13 @@
+/*Resetear los valores de la hoja de estilo del Navegador */
+*,::before,::after{
+      margin: 0px;
+}
+html,body{
+      width: 100vw;
+      min-height: 100vh;
+      background-color: aquamarine;
+      background-image: url(../img/gif1.gif),url(../img/background.jpg);
+      background-size: 50%, cover;
+      background-position: center, center;
+      background-repeat: no-repeat, no-repeat;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactar con Cifo La Violeta || Html y Css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+        <header>
+                <nav>
+                        <!-- ul>(li>a)*5 -->
+
+                        <!-- Menu dispositivos moviles -->
+                        <label for="menu" class="showmenu">&equiv;</label>
+                        <input type="checkbox" name="menu" id="menu">
+
+
+                        <ul>
+                                <li>
+                                        <a href="../index.html">Home</a>
+                                </li>
+                                <li>
+                                        <a href="../imagenes.html">Imágenes</a>
+                                </li>
+                                <li>
+                                        <a href="../audioVideo.html">Audio y Vídeo</a>
+                                </li>
+                                <li>
+                                        <a href="../iframes.html">Marcos flotantes</a>
+                                </li>
+                                <li>
+                                        <a class="active" href="formularios/index.html">Contactar</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <main>
+                <h1>Formularios con Html</h1>
+                
+                <h3>Contacta con nosotros</h3>
+
+                <form action="directorio/gestor.php" method="get" id="firstContact" name="firstContact">
+
+                        <fieldset>
+                                <legend>Datos Personales</legend>
+
+                                
+                                <div class="form_element">
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" name="nombre" id="nombre" required placeholder="Escríbe tu nombre aquí" pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$"> 
+                                </div>
+
+                                <div class="form_element">
+                                        <label for="email">Email:</label>
+                                        <input type="text" name="email" id="email" required placeholder="Escríbe tu e-mail aquí" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"> 
+                                </div>
+
+                                <div class="form_element">
+                                        <label for="cp">Código Postal:</label>
+                                        <input type="text" name="cp" id="cp" required placeholder="ej:55555" pattern="[0-9]{5}"> 
+                                </div>
+
+                                <div class="form_element">
+                                        <label for="tel">Teléfono:</label>
+                                        <input type="number" name="tel" id="tel" required placeholder="ej:611111111" min="600000000" max="999999999" size="9"> 
+                                </div>
+
+                                <div class="form_element">
+                                        <p>Sexo:</p>
+                                        <input type="radio" name="sexo" id="hombre" value="hombre">
+                                        <label for="hombre">Hombre</label>
+                                        <input type="radio" name="sexo" id="mujer" value="mujer">
+                                        <label for="mujer">Mujer</label>
+                                        <input type="radio" name="sexo" id="nobinario" value="nobinario">
+                                        <label for="nobinario">No Binario</label>
+                                </div>        
+                        </fieldset>
+
+                        <fieldset>
+                                <legend>Aficiones</legend>
+
+                                <div class="form_element">
+                                        <p>Indica las consolas con las que juegas</p>        
+                                        
+                                        
+                                        <input type="checkbox" name="xbox" id="xbox">
+                                        <label for="xbox">Xbox</label>
+
+                                        
+                                        <input type="checkbox" name="ps5" id="ps5">
+                                        <label for="ps5">PS5</label>
+
+                                        
+                                        <input type="checkbox" name="wi" id="wi">
+                                        <label for="wi">Wi</label>
+                                </div>        
+
+                                <div class="form_element">
+                                        <p>Sistema operativo preferido</p> 
+                                        <label for="so">Selecciona un sistema operativo:</label>
+                                        <select name="so" id="so" required>
+                                                <option value="" selected disabled>- Selecciona un sistema operativo -</option>
+                                                <option value="windows">Windows</option>
+                                                <option value="os">OS</option>
+                                                <option value="linux">Linux</option>
+                                        </select>
+                                </div>        
+
+                                <div class="form_element">
+                                        <p>Explícanos en que te podemos ayudar</p>
+                                        <textarea name="content" id="content" cols="30" rows="10" placeholder="Queremos colaborar contigo"></textarea>
+                                </div>
+                        </fieldset>
+
+                        <fieldset>
+                                <input class="btn_demo" type="reset" value="Limpiar Formulario">
+                                <input class="btn_demo" type="submit" value="Enviar Formulario">
+                        </fieldset>
+
+                </form>        
+                
+        </main>
+        <footer>
+                <div>
+                        <p>Calle Desierta, s/n - 2020002 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong></p>
+                        <p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">Contacta con nosotros por email</a></p>
+                </div>  
+                <div>
+                        <p>
+                                <a href="tel:55555555555"> &#9742; <span>Puedes contactarnos por teléfono</span></a> o por <a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Whatssap</span></a>
+                        </p>
+                </div>
+        </footer>
+        
+</body>
+</html>

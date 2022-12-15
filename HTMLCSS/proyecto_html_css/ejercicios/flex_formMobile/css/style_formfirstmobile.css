@@ -1,0 +1,115 @@
+*,::before,::after,html{
+      margin: 0;
+      padding: 0;
+}
+body{
+      min-height: 100vh;
+      width: 100vw;
+      font-size: 17px;
+}
+nav{
+      background-color: aqua;
+      padding: 0.6rem 0;
+}
+header, footer{
+      background-color: greenyellow;
+      min-height: 18vh;
+      padding: 0.6rem 0;
+}
+main{
+      display: flex;
+      flex-direction: column;
+}
+main section{
+      background-color: orangered;
+      box-sizing: border-box;
+      padding: 1rem;
+}
+main aside{
+      background-color: green;
+      padding: 0.6rem 0;
+}
+.myForm{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      box-sizing: border-box;
+      padding: 1.5rem;
+      border-radius: 5px;
+}
+.myForm input{
+      margin-bottom: 0.8rem;
+      min-height: 3rem;
+      border: 2px solid red;
+      border-radius: 5px;
+      box-sizing: border-box;
+}
+.myForm textarea{
+      width: 100%;
+      min-height: 200px;
+      border: 2px solid red;
+      border-radius: 5px;
+      resize: vertical;
+}
+.envio{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0.5rem 0;
+}
+.myForm button{
+      padding: 0.35rem;
+      background-color: green;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid green;
+      cursor: pointer;
+}
+.myForm button.borrar{
+      background-color: red;
+      border: 1px solid red;
+}
+.myForm .message{
+      display: flex;
+      flex-direction: column;
+      order: 1;
+}
+.myForm .contact{
+      display: flex;
+      flex-direction: column;
+}
+@media screen and (min-width:768px) {
+      body{
+            display: flex;
+            flex-direction: row;
+      }
+      .container{
+            flex-grow: 6;
+      }
+      nav{
+            flex-grow: 1;
+      }
+      main{
+            flex-direction: row;
+            min-height: 70vh;
+      }
+      main section{
+            flex-grow: 6;
+      }
+      main aside{
+            flex-grow: 1;
+      }
+      header, footer{
+            height: 14vh;
+      }
+      .myForm{
+            flex-direction: row;
+            gap: 2rem;
+      }
+      .myForm .message{
+            flex-grow: 1;
+      }
+      .myForm .contact{
+            flex-grow: 1;
+      }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CP de Apps con tecnologías web || Imágenes con HTML y CSS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>
+                <nav>
+                        <!-- Menu dispositivos moviles -->
+                        <label for="menu" class="showmenu">&equiv;</label>
+                        <input type="checkbox" name="menu" id="menu">
+                        
+                        <!-- ul>(li>a)*5 -->
+                        <ul>
+                                <li>
+                                        <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                        <a class="active" href="imagenes.html">Imágenes</a>
+                                </li>
+                                <li>
+                                        <a href="audioVideo.html">Audio y Vídeo</a>
+                                </li>
+                                <li>
+                                        <a href="iframes.html">Marcos flotantes</a>
+                                </li>
+                                <li>
+                                        <a href="formularios/index.html">Contactar</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <main>
+                <h1>Galería de Imágenes con Html y Css</h1>
+                <section>
+                        <h2>Galería con la etiqueta img</h2>
+                        <img class="maxi filter1" src="https://picsum.photos/300?random=1" alt="Foto random">
+                        <img class="maxi filter2" src="https://picsum.photos/300?random=2" alt="Foto random">
+                        <img class="maxi filter3" src="https://picsum.photos/300?random=3" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=4" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=5" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=6" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=7" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=8" alt="Foto random">
+                        <img class="maxi" src="https://picsum.photos/300?random=9" alt="Foto random">
+                </section>
+                
+                <section class="cards">
+                        <h2>Galería con divisiones y imágenes de fondo</h2> <br>
+                        <div id="fons1">
+                                <h3>PRODUCTOS</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iste impedit quidem veniam est doloremque eos molestias cumque beatae voluptatum. Quos hic ea, cumque maiores tempore labore corporis doloremque rerum!</p>
+                        </div>
+                        <div id="fons2">
+                                <h3>SERVICIOS</h3>
+                                <p>Iusto et mollitia saepe cum! Exercitationem consequatur repudiandae voluptates alias commodi possimus provident rerum pariatur itaque error? Perferendis, beatae! Soluta blanditiis ullam mollitia minus facilis totam illum neque repudiandae impedit.</p>
+                        </div>
+                        <div id="fons3">
+                                <h3>NOTÍCIAS</h3>
+                                <p>Assumenda reprehenderit est veritatis praesentium. Velit voluptates libero numquam quos quisquam vel vitae earum magnam pariatur cumque, atque blanditiis maxime repellendus sed dolorum modi dicta id necessitatibus explicabo temporibus quo.</p>
+                        </div>
+                        <div id="fons4">
+                                <h3>BLOG</h3>
+                                <p>Ducimus sequi cupiditate, eius a natus, quibusdam veniam esse, non dicta facere officia repudiandae ipsa vero nesciunt atque neque corporis in. Corporis placeat commodi molestias dolore necessitatibus magnam quos eos!</p>
+                        </div>
+                        <div id="fons5">
+                                <h3>NOSOTROS</h3>
+                                <p>Quod molestias cupiditate, molestiae commodi quae rem nesciunt minima voluptatibus. Autem eos placeat et optio totam natus esse reprehenderit sint, cupiditate inventore. Animi harum, deserunt ducimus labore nesciunt aperiam laboriosam!</p>
+                        </div>
+                        <div id="fons6">
+                                <h3>CONTACTO</h3>
+                                <p>Magni provident eveniet ipsum, voluptatem esse exercitationem officiis! Magni aspernatur impedit praesentium voluptatem quos mollitia nesciunt sit maxime maiores nemo fugiat autem molestiae totam alias, ut sequi et iusto nostrum.</p>
+                        </div>
+                        <div id="fons7">
+                                <h3>LOCALIZACIÓN</h3>
+                                <p>Reprehenderit labore, in autem ipsa ad ipsum quisquam earum quia. Consectetur et perspiciatis nam itaque. Porro eveniet quia accusamus atque excepturi numquam laborum suscipit, vel totam saepe aliquam voluptas vero!</p>
+                        </div>
+                        <div id="fons8">
+                                <h3>MISIÓN</h3>
+                                <p>Corrupti maxime, dolor maiores consectetur nisi quis. Animi quia deserunt voluptatem molestiae numquam id iure quae ducimus eos, repellendus voluptatibus, tempora enim delectus accusamus quidem quod modi, corrupti praesentium dolorem!</p>
+                        </div>
+                        <div id="fons9">
+                                <h3>CATÁLOGO</h3>
+                                <p>Assumenda repellendus, recusandae cupiditate laudantium sed quas fuga quidem soluta facere quis quo quaerat natus voluptatibus. At eligendi facilis sint aliquam culpa. Voluptatum dicta optio repellendus sapiente. Harum, dolorum quis.</p>
+                        </div>
+                </section>
+
+                <section>
+                        <h2>Enlace a demo Html con diversas imágenes de fondo</h2>
+                        <div class="botones">
+                                <button class="btn_demo" onclick="abrirDemo();">Abrir demo con javascript</button>
+                                <a class="btn_demo" href="javascript:abrirDemo();">Abrir la misma demo de un hipervínculo</a>
+                        </div>
+                </section>
+
+                
+        </main>
+        <footer>
+                <div>
+                        <p>Calle Desierta, s/n - 2020002 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong></p>
+                        <p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">Contacta con nosotros por email</a></p>
+                </div>  
+                <div>
+                        <p>
+                                <a href="tel:55555555555"> &#9742; <span>Puedes contactarnos por teléfono</span></a> o por <a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Whatssap</span></a>
+                        </p>
+                </div>
+        </footer>
+        <script>
+                function abrirDemo(){
+                        //alert("hola");
+                        //open("");
+                        window.open("bgimage.html", "new", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+                }
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,403 @@
+/* ESTRUCTURA
+      selector, o selectores, .clase{
+            propiedad: valor;
+            propiedad: valor;
+      }      
+*/
+
+/*Resetear los valores de la hoja de estilo del Navegador */
+*,::before,::after{
+      margin: 0px;
+}
+/* Proporciones en rem */
+html{
+      /*
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      */
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 18px;
+      width: 100vw;
+      min-height: 100vh;
+}
+
+/* Proporciones en em 
+body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+}
+*/
+
+p{
+      font-size: 1rem;
+      margin-bottom: 1rem;
+}
+h1{
+      font-size: 2.45rem;
+      font-weight: 900;
+      margin-bottom: 2rem;
+}
+h2{
+      font-size: 1.9rem;
+      font-weight: 900;
+      margin-bottom: .5rem;
+}
+h3{
+      font-size: 1.5rem;
+      font-weight: 900;
+}
+h4{
+      font-size: 1.2rem;
+      font-weight: 700;
+}
+h5{
+      font-size: 0.8rem;
+      font-weight: 700;
+}
+/* HEADER y Navegación */
+nav{
+      background-color: black;
+      display: flex;
+      justify-content: center; 
+      /* text-align: center; */
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+}
+nav ul{
+      list-style-type: none;
+      /*text-align: center;*/
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+nav a{
+      color: aliceblue;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      font-weight: 400;
+}
+nav a:hover{
+      color: black;
+      background-color: aliceblue;
+}
+.active{
+      text-decoration: overline;
+      background-color: rgb(0, 170, 255);
+      color: black;
+      cursor: default;
+      pointer-events: none;
+}
+label.showmenu{
+     /*  font-size: 2.8rem;
+      line-height: 3.2rem;
+      font-weight: 800;
+      color: white;
+      display: none; */
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-weight: 600;
+      color: white;
+      display: none;
+      margin-left: 0.3rem;
+}
+header input[type="checkbox"]{
+      display: none;
+}
+main{
+      max-width: 90vw;
+      margin: auto;
+      margin-top: 6rem;
+      min-height: 80vh;
+
+}
+
+div.mostra{
+      border: 5px solid red;
+      padding: 1rem;
+      width: 100%;
+      overflow: auto;
+      height: 40px;
+      box-sizing: border-box;
+      /*display: inline-block;*/
+}
+.interior{
+      width: 80%;
+      background-color: blue;
+      padding: 1rem;
+      float: left;
+      box-sizing: border-box;
+      height: 200px;
+}
+.sidebar{
+      width: 20%;
+      background-color:  rgb(24, 23, 23);
+      padding: 1rem;
+      float: right;
+      box-sizing: border-box;
+      height: 200px;
+}
+footer{
+      min-height: 15vh;
+      display: flex;
+      /*
+      flex-direction: row;
+      flex-wrap: wrap; */
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100vw;
+      color: aliceblue;
+      background-color: black;
+      padding: 1rem;
+      align-items: center;
+      box-sizing: border-box;
+}
+footer a{
+      color: cyan;
+      text-decoration: none;
+}
+footer a:hover{
+      color: aliceblue;
+}
+/*
+footer div{
+      border: 1px solid white;
+}
+*/
+
+
+section{
+      text-align: center;
+      margin-bottom: 2rem;
+}
+
+
+img, .cards div{
+      margin: 1rem;
+}
+
+.filter1:hover{
+      filter: blur(10px);
+}
+.filter2:hover{
+      filter: contrast(90);
+}
+.filter3:hover{
+      filter: invert(59);
+}
+.cards{
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      align-items: center;
+
+}
+.cards div{
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 0.5rem;
+      background-size: cover;
+      background-position: center;
+      box-sizing: border-box;
+}
+.cards h2{
+      width: 100vw;
+      text-align: center;
+}
+.cards p,.cards h3{
+      text-align: left;
+      opacity: 0;
+      color: black;
+      transition: all ease 0.4s;
+}
+.cards div:hover p,.cards div:hover h3{
+      text-align: left;
+      opacity: 1;
+      color: white;
+      margin: 1rem;
+}
+.cards div:hover{
+      background-color: red !important;
+      background-image: none !important;
+}
+#fons1{
+      background-image: url("https://picsum.photos/300?random=1");
+}
+#fons2{
+      background-image: url("https://picsum.photos/300?random=2");
+}
+#fons3{
+      background-image: url("https://picsum.photos/300?random=3");
+}
+#fons4{
+      background-image: url("https://picsum.photos/300?random=4");
+}
+#fons5{
+      background-image: url("https://picsum.photos/300?random=5");
+}
+#fons6{
+      background-image: url("https://picsum.photos/300?random=6");
+}
+#fons7{
+      background-image: url("https://picsum.photos/300?random=7");
+}
+#fons8{
+      background-image: url("https://picsum.photos/300?random=8");
+}
+#fons9{
+      background-image: url("https://picsum.photos/300?random=9");
+}
+
+section > div.botones{
+      padding: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+}
+
+.btn_demo{
+      background-color: aquamarine;
+      border: none;
+      color: black;
+      padding: 1rem;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+}
+.btn_demo:hover{
+      color: aquamarine;
+      background-color: black;
+}
+.btn_disabled{
+      background: #ccc;
+      color: black;
+      cursor: not-allowed;
+}
+.btn_disabled:hover{
+      background: #ccc;
+      color: black;
+}
+#controles{
+      margin-top: 1rem;
+}
+
+/*Estilos de la página de Iframes */
+iframe{
+      width: 100%;
+      height: 400px;
+      border: 0;
+
+}
+.flex{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+}
+.iframes.left{
+      width: 60%;
+}
+.iframes.right{
+      width: 35%;
+}
+.vp-center{
+      justify-content: flex-end !important;
+}
+
+/* Formateo del Formulario */
+
+
+fieldset{
+      padding: 1.5rem;
+      margin: 1.5rem 0; 
+} 
+
+label{
+      width: 250px;
+      display: inline-block;
+      font-size: 1.1rem;
+}
+input[type="text"],input[type="number"],input[type="email"],textarea, select{
+      width: 60%;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.8rem;
+      border: none;
+      border-bottom: 2px solid #666;
+      margin: 1rem;
+}
+
+.form_element p{  
+      font-size: 1.1rem;
+}
+input[type="radio"] + label, input[type="checkbox"] + label {
+      width: auto;
+      margin-right: 10px;
+}
+textarea{
+      border: 1px solid black;
+}
+
+
+ .form_element{
+      margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width:768px) {
+      main{
+            max-width: 95vw;
+            background-color: rgb(192, 213, 115);
+            margin-top: 4.5rem;
+      }
+      h1{
+            font-size: 2.2rem;
+      }
+
+      label.showmenu{
+            display: flex;
+            cursor: pointer;
+            width: 8vw;
+      }
+      nav{
+            justify-content: flex-start;
+      }
+      nav ul{
+            opacity: 0;
+            height: 0;
+            transition: all ease 0.5s;
+      }
+      header input[type="checkbox"]:checked + ul{
+            display: flex;
+            flex-direction: column;
+            opacity: 1;
+            height: auto;
+      }
+
+      input[type="text"], input[type="number"], input[type="email"], textarea, select {
+            margin: 1rem 0;
+            width: 88%;
+      }
+}
+@media screen and (max-width:425px) {
+      main{
+            min-height: 80vh;
+            background-color: rgb(207, 63, 157);
+      }
+      img.maxi{
+            object-fit: cover;
+            width: 100%;
+            height: 250px;
+            object-position: center center;
+            margin: 0.5rem 0;
+      }
+}

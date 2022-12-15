@@ -1,0 +1,61 @@
+*,::before,::after,html{
+      margin: 0;
+      padding: 0;
+}
+body{
+      min-height: 100vh;
+      width: 100vw;
+      font-size: 17px;
+}
+header, footer{
+      box-sizing: border-box;
+      padding: 1rem;
+      height: 15vh;
+      background-color: yellow;
+}     
+#main{
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+}
+nav, aside{
+      background-color: greenyellow;
+      box-sizing: border-box;
+      padding: 1rem;
+      flex-grow: 0;
+}
+article{
+      box-sizing: border-box;
+      padding: 2.5rem 1rem;
+      flex-grow: 1;
+}
+article div{
+      box-sizing: border-box;
+      padding: 0.5rem;
+}
+#verde{
+      background-color: lightgreen;
+      min-height: 100px;
+      
+}
+#azul{
+      background-color: lightblue;
+}
+
+
+/* Medias querys para tablet */
+@media screen and (min-width:768px) {
+      #main{
+            flex-direction: row;
+      }
+      nav, aside{
+            flex-grow: 1;
+      }
+      article{
+            flex-grow: 2;
+      }
+}
+/* Medias querys para escritorio */
+@media screen and (min-width:1280px) {
+      
+}

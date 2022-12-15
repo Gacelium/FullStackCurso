@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iframes de Terceros || Html y Css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>
+                <nav>
+                        <!-- Menu dispositivos moviles -->
+                        <label for="menu" class="showmenu">&equiv;</label>
+                        <input type="checkbox" name="menu" id="menu">
+                        
+                        <!-- ul>(li>a)*5 -->
+                        <ul>
+                                <li>
+                                        <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                        <a href="imagenes.html">Imágenes</a>
+                                </li>
+                                <li>
+                                        <a href="audioVideo.html">Audio y Vídeo</a>
+                                </li>
+                                <li>
+                                        <a class="active" href="iframes.html">Marcos flotantes</a>
+                                </li>
+                                <li>
+                                        <a href="formularios/index.html">Contactar</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <main>
+                <h1>Iframes de Terceros</h1>
+
+                <section>
+                        <h2>Localización del Cifo La Violeta</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.033765138436!2d2.1308731157802425!3d41.41678570213442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4981b5fdca4b1%3A0x35e8d1d280af19bd!2sCIFO%20Barcelona%20-%20La%20Violeta!5e0!3m2!1sen!2ses!4v1669395074460!5m2!1sen!2ses"></iframe>
+                </section>
+
+                <section>
+                        <h2>Videos de Vimeo y Youtube</h2>
+                        <div class="flex">
+                                <div class="iframes left">
+                                        <iframe src="https://www.youtube.com/embed/qysOyTSdpHw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="iframes right">
+                                        <iframe src="https://player.vimeo.com/video/768297972?h=5f4087539f" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                        </div>
+                        
+                </section>
+              
+                
+        </main>
+        <footer>
+                <div>
+                        <p>Calle Desierta, s/n - 2020002 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong></p>
+                        <p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">Contacta con nosotros por email</a></p>
+                </div>  
+                <div>
+                        <p>
+                                <a href="tel:55555555555"> &#9742; <span>Puedes contactarnos por teléfono</span></a> o por <a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Whatssap</span></a>
+                        </p>
+                </div>
+        </footer>
+        
+</body>
+</html>

@@ -1,0 +1,22 @@
+body, html{
+      min-height: 100vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0px;
+}
+
+/* Ejercicio 1 */
+.centrado{
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      
+}
+.cajita{
+      background-color: blue;
+      height: 400px;
+      width: 80vw;
+}

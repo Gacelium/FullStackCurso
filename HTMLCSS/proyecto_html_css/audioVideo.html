@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio y Vídeo con Html5 || Html y Css</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header>
+                <nav>
+                        <!-- ul>(li>a)*5 -->
+
+                        <!-- Menu dispositivos moviles -->
+                        <label for="menu" class="showmenu">&equiv;</label>
+                        <input type="checkbox" name="menu" id="menu">
+
+                        <ul>
+                                <li>
+                                        <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                        <a href="imagenes.html">Imágenes</a>
+                                </li>
+                                <li>
+                                        <a class="active" href="audioVideo.html">Audio y Vídeo</a>
+                                </li>
+                                <li>
+                                        <a href="iframes.html">Marcos flotantes</a>
+                                </li>
+                                <li>
+                                        <a href="formularios/index.html">Contactar</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <main>
+                <h1>Audio y Vídeo con Html5</h1>
+           
+                <section>
+                        <h2>Audio</h2>
+                        <p>Desde Html 5 disponemos de la etiqueta &lt;audio></p>
+                        <div>
+                                <audio controls src="video-audio/hakunaMatataItMeansNoWorries.mp3"></audio>
+                                <audio controls>
+                                        <source src="video-audio/hakunaMatataItMeansNoWorries.ogg" type="audio/ogg">
+                                        <source src="video-audio/hakunaMatataItMeansNoWorries.mp3" type="audio/mpeg">
+                                </audio>
+                        </div>
+                </section>      
+                
+                <section>
+                        <h2>Vídeo</h2>
+                        <p>Html5 dispone de la etiqueta &lt;video></p>
+                        <div>
+                                <!-- <video controls poster="video-audio/leon.jpg" src="video-audio/leon.mp4"></video> -->
+                                <video id="video" poster="video-audio/musicos.jpg">
+                                        <source src="video-audio/video.mp4" type="video/mp4">
+                                        <source src="video-audio/video.ogv" type="video/ogv">
+                                </video>
+                        </div>
+                        <div id="controles">
+                                <button id="btn_playPause" class="boton btn_demo">Play/Pause</button> || 
+                                <button class="boton btn_demo" id="btn_reproduce">Play</button> || 
+                                <button class="boton btn_demo" id="btn_pause">Pause</button>
+                        </div>
+                </section>
+                
+                <section>
+                        <h2>Enlace a demo Html con vídeo de fondo</h2>
+                        <div class="botones">
+                                <input id="btn_abrirVideoFondo" class="btn_demo" type="button" value="Abrir demo con javascript">
+                                <a class="btn_demo" href="javascript:abrirVideoFondo();">Abrir la misma demo de un hipervínculo</a>
+                        </div>
+                </section>
+                
+        </main>
+        <footer>
+                <div>
+                        <p>Calle Desierta, s/n - 2020002 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong></p>
+                        <p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">Contacta con nosotros por email</a></p>
+                </div>  
+                <div>
+                        <p>
+                                <a href="tel:55555555555"> &#9742; <span>Puedes contactarnos por teléfono</span></a> o por <a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!!"> <i class="fa fa-whatsapp" aria-hidden="true"></i> <span>Whatssap</span></a>
+                        </p>
+                </div>
+        </footer>
+
+        <script src="js/scripts.js"></script>
+
+
+        
+</body>
+</html>

@@ -1,0 +1,105 @@
+*,::before,::after,html{
+      margin: 0;
+      padding: 0;
+}
+body{
+      min-height: 100vh;
+      width: 100vw;
+      font-size: 14px;
+}
+#cabecera{
+      text-align: center;
+      background-color: black;
+}
+#cabecera img{
+      margin: 2rem 0 0rem 0;
+}
+h1{
+      font-size: 2rem;
+      text-align: center;
+      line-height: 2rem;
+      margin: 1.5rem;
+}
+#viajes{
+      /* width: 100%; */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+}
+.viajes-item{
+      box-sizing: border-box;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+}
+.viajes-item img{
+      max-width: 80%;
+      order: 0;
+      margin: 0 auto;
+}
+.viajes-item h2{
+      order: 1;
+      font-size: 1.2rem;
+      margin: 1rem 0 1.5rem;
+}
+.viajes-item p{
+      order: 2;
+      font-size: 1rem;
+      min-height: 120px;
+}
+.viajes-item button{
+      order: 3;
+      width: 200px;
+      margin: 5rem auto 0 auto;
+}
+.uno{
+      background-color: rgba(193,212,231,255);
+}
+.dos{
+      background-color: rgba(189,238,187,255);
+}
+.tres{
+      background-color: rgba(121,169,168,255);
+}
+
+/* Medias querys para tablet */
+@media screen and (min-width:768px) {
+      #viajes{
+            flex-direction: row;
+            flex-wrap: wrap;
+      
+      }
+      .uno{
+            flex-basis: 50%;
+            order: 2;
+      }
+      .dos{
+            flex-basis: 50%;
+            order: 1;
+      }
+      .tres{
+            flex-basis: 100%;
+            order: 3;
+      }
+}
+/* Medias querys para escritorio */
+@media screen and (min-width:1024px) {
+      #viajes{
+            flex-wrap: nowrap;
+      }
+      .uno{
+            flex-basis: 33%;
+            order: 3;
+      }
+      .dos{
+            flex-basis: 33%;
+            order: 2;
+      }
+      .tres{
+            flex-basis: 33%;
+            order: 1;
+      }
+}
+

@@ -1,0 +1,50 @@
+*,::before,::after,html{
+      margin: 0;
+      padding: 0;
+}
+body{
+      min-height: 100vh;
+      width: 100vw;
+      font-size: 17px;
+}
+.container{
+      min-height: 100vh;
+      width: 100vw;
+}
+h4{
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem 0;
+}
+p{
+      font-size: 1rem;
+      line-height: 1.5rem;
+}
+.masonry{
+      column-count: 1;
+      max-width: 80%;
+      margin: 0 auto;
+      /* column-gap: 56; */
+}
+.inner{
+      border: 1px solid black;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      padding: 1rem;
+      display: inline-block;
+}
+
+
+/* Medias querys para tablet */
+@media screen and (min-width:768px) {
+      .masonry{
+            column-count: 2;
+            gap: 1rem; 
+      }
+}
+/* Medias querys para escritorio */
+@media screen and (min-width:1280px) {
+      .masonry{
+            column-count: 3;
+      }
+}
